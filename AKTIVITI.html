@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="aktivti.css">
+</head>
+<body>
+    <header class="header">  
+        <div class="logo">
+            <img src="img1.jpg" alt="Logo">
+        </div>
+          <nav class="navbar">
+        <a href="UTAMA.html">UTAMA</a>
+        <div class="dropdown">
+            <button class="dropbtn">KORPORAT
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Carta Organisasi.html">Carta Organisasi</a>
+                <a href="Peraturan Perpustakaan.html">Peraturan Perpustakaan</a>
+                <a href="info.html">Kadar Denda</a>
+                <a href="Statistik Pengguna Perpustakaan.html">Statistik</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PERKHIDMATAN
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="perkhidmatan pangkalan data.html">Perkhidmatan Pangkalan Data</a>
+                <a href="tempahan bilik perbincangan.html">Tempahan Bilik Perbincangan</a>
+                <a href="ruang komputer.html">Ruang Komputer</a>
+                <a href="Perkhidmatan LCD Projektor.html">Perkhidmatan LCD Projektor</a>
+                <a href="Bilik E-Learning.html">Bilik E-Learning</a>
+                <a href="Kaunter Perpustakaan.html">Kaunter Perpustakaan</a>
+            </div>
+        </div>
+        <a href="BUKU TERBAHARU.html">KOLEKSI</a>
+        <a href="AKTIVITI.html">AKTIVITI</a>
+        <a href="Hubungi Kami.html">HUBUNGI KAMI</a>
+    </nav>
+    
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="heading" id="myHeader">
+        <h1>Jom Baca 2023</h1>
+        <p>24 Mei 2023 - Majlis Perasmian Penutup Jom Baca KKSY 2023 yang telah dirasmikan Oleh Dr Rasmuna Hussain dan diserikan dengan Ulasan Buku dari Ustaz Ahmad Fauwaz berjalan dengan sungguh sederhana dan sempurna. Terima kasih kepada semua warga KKSY yang turut sama menyertai Program ini bagi Kuiz Teka Muka Surat Buku, Teka Berat Buku, Kuiz Pantas Jawi, Ulasan Buku dan turut hadir dalam program Perpustakaan.</p>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="2023_1.jpg" style="width:100%">
+            <img src="2023_2.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Additional Headers and Photo Grids for other programs -->
+    <div class="heading" id="myHeader">
+        <h1>Program Open Day: Yayasan Raja Muda Selangor</h1>
+        <p>24 Ogos 2022- Menjunjung Kasih Duli Yang Teramat Mulia Raja Muda Selangor, Tengku Amir Shah Sultan Sharafuddin Idris Shah Alhaj kerana sudi mencemar duli melawat Perpustakaan KKSY sempena program Open Day Yayasan Raja Muda Selangor.</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="raja muda_1.jpg" style="width:100%">
+            <img src="raja muda_4.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="raja muda_2.jpg" style="width:100%">
+            <img src="raja muda_3.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <div class="heading" id="myHeader">
+        <h1>Jom Baca 2022</h1>
+        <p>24 April 2022, Program Jom Baca Bersama 10 Minit Peringkat KKSY dan KKSY #QuranHour bersama tetamu jemputan <br> YBhg. Datuk Dr. Haji Zulkifli Bin Mohamad Al-Bakri.</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="2022_1.jpg" style="width:100%">
+            <img src="2022_4.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="2022_3.jpg" style="width:100%">
+            <img src="2022_2.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <div class="heading" id="myHeader">
+        <h1>Jom Baca 2021</h1>
+        <p>25 April 2021 - Program Jom Baca Selama 10 Minit peringkat KKSY 2021 telah dirasmikan oleh Ts Abdul Razak bin Sabtu, Pengarah Kolej Komuniti Selayang. Program ini turut diserikan dengan kehadiran penulis buku Encik Ahmad  Mohd Isa dan isteri beliau, Puan Noradilah Binti Mohd Sapie  yang mengulas buku bertajuk Ustazah Basikal.</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="2021_1.jpg" style="width:100%">
+            <img src="2021_2.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="2021_3.jpg" style="width:100%">
+            <img src="2021_4.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+
+    // Two images side by side
+    function two() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "50%";  // IE10
+            elements[i].style.flex = "50%";
+        }
+    }
+
+    // Four images side by side
+    function four() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "25%";  // IE10
+            elements[i].style.flex = "25%";
+        }
+    }
+    </script>
+</body>
+</html>

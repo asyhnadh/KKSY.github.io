@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: url(https://i.pinimg.com/originals/09/48/29/0948297930b7fe4c01dce4233f9b787e.png) center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 25rem;
+    height: 6rem;
+    margin-left: 1rem;
+}
+
+.header .navbar {
+    margin: 0 auto; /* Center the navbar */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 5%; /* Adjust the margin to increase the space between links */
+}
+
+/* Styling for all navbar links and dropbtn */
+.navbar a, .dropbtn {
+    font-size: 1.0rem;
+    color: #020301;
+    padding: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar a:hover, .dropbtn:hover {
+    color: #faf9f8;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .1rem;
+}
+
+/* Additional styling for dropdown hover */
+
+.dropdown:hover .dropbtn {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+#menu-btn {
+    display: none;
+}
+
+.icons div {
+    color: #13131a;
+    cursor: pointer;
+    font-size: 2.0rem;
+    margin-left: 2rem;
+}
+
+.icons div:hover {
+    color: #010103;
+}
+
+.search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.search-form.active {
+    transform: scaleY(1);
+}
+
+.search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+}
+
+.search-form label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.search-form label:hover {
+    color: var(--main-color);
+}
+
+.heading {
+    text-align: bottom;
+    color: #010103;
+    text-transform: lowercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+
+
+.btn:hover {
+    letter-spacing: 0.4rem;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+ol {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    list-style-position: inside;
+    border-radius: 30px;
+    background: palevioletred;
+    padding: 30px;
+    width: 350px;
+    height: 100px;
+    margin-left: 420px;
+}
+
+.gallery {
+    display: inline-block;
+    border: 1px solid palevioletred;
+    margin: 5px;
+    width: 200px;
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    font-family: Arial;
+}
+
+.gallery:hover {
+    border: 1px solid pink;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: Arial;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-family: Arial;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-family: Arial;
+}
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.233);
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: .8rem 3rem;
+}
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - .8rem);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+}
+
+.table__body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 1rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+}
